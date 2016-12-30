@@ -8,7 +8,3 @@ ENT.Category = "It's all Fun + Games till someone gets hurt"
 
 ENT.Spawnable = false
 ENT.AdminOnly = false
-
-function ENT:SetupDataTables()
-end
-
