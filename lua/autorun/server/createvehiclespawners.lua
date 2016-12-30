@@ -19,13 +19,13 @@ local Spawners = {
 			pos = Vector(-8662,-4865,0),
 			ang = Angle(0,0,0),
 			team = "GOVERNMENT",
-			vehicle = "sim_fphys_conapc",
+			vehicle = "sim_fphys_conscriptapc",
 		},
 		{
 			pos = Vector(-8368,-4931,0),
 			ang = Angle(0,0,0),
 			team = "GOVERNMENT",
-			vehicle = "sim_fphys_conapc",
+			vehicle = "sim_fphys_conscriptapc",
 		},
 	}
 }
