@@ -6,8 +6,8 @@ ENT.Author = ""
 ENT.Information = ""
 ENT.Category = "It's all Fun + Games till someone gets hurt"
 
-ENT.Spawnable = true
-ENT.AdminOnly = true
+ENT.Spawnable = false
+ENT.AdminOnly = false
 
 function ENT:SetupDataTables()
 end
