@@ -136,6 +136,26 @@ function ENT:CreateVehicle( vname, pos, ang )
 			Ent:setDoorGroup(self.team)
 		end
 	end )
+	
+	
+	if (Ent:GetModel( ) == "models/apc/apc.mdl") then
+		timer.Simple( 0.2, function()
+			if (!IsValid(vehicle)) then return end
+			if (vname == "sim_fphys_conscriptapc_armed") then
+				table.insert(armedAPCSTable, Ent)
+			end
+		end)
+	end
+	
+	if (Ent:GetModel( ) == "models/vehicles/buggy_elite.mdl") then
+		timer.Simple( 0.2, function()
+			if (!IsValid(vehicle)) then return end
+			if (vname == "sim_fphys_v8elite_armed") then
+				table.insert(armedJEEPSTable, Ent)
+				vehicle:SetBodygroup(1,1)
+			end
+		end)
+	end
 end
 
 function ENT:Think()
