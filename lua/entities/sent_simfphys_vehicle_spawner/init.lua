@@ -30,7 +30,7 @@ function ENT:CreateVehicle( vname, pos, ang )
 	self.spawnedvehicle = Ent
 	
 	if self.Locked then
-		Ent:keysLock()
+		Ent:Lock()
 	end
 	
 	if self.team and Ent.setDoorGroup then
