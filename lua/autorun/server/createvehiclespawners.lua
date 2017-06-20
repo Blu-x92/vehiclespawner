@@ -4,13 +4,13 @@ local Spawners = {
 		{
 			pos = Vector(-433,-658,-14591.719),
 			ang = Angle(0,0,0),
-			team = "Cops and Mayor only",
 			vehicle = "sim_fphys_dukes",
 		},
 		{
 			pos = Vector(-250,-658,-14591.719),
 			ang = Angle(0,0,0),
-			team = "Cops and Mayor only",
+			team = "Cops and Mayor only",   -- DARK RP door system ownership
+			Locked = true,	-- spawn the vehicle locked?
 			vehicle = "sim_fphys_jeep",
 		},
 	},
