@@ -51,6 +51,7 @@ local function CreateSpawnersPlease()
 			local pos = myfiles[i].pos
 			local ang = myfiles[i].ang
 			local team = myfiles[i].team
+			local lock = myfiles[i].Locked
 			local vehicle = WouldYouKindlyCheck( myfiles[i].vehicle )
 			
 			if pos and ang and vehicle then
@@ -61,6 +62,7 @@ local function CreateSpawnersPlease()
 				ent:Activate()
 				ent.vehicle = vehicle
 				ent.team = team
+				ent.Locked = lock
 			end
 		end
 		return true
