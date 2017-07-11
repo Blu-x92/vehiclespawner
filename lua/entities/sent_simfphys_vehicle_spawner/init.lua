@@ -29,6 +29,14 @@ function ENT:CreateVehicle( vname, pos, ang )
 	local Ent = simfphys.SpawnVehicleSimple( vname, pos, ang )
 	self.spawnedvehicle = Ent
 	
+	timer.Simple( 0.2, function()
+		if not IsValid( Ent ) then return end
+		if not simfphys then return end
+		if not simfphys.RegisterEquipment then return end
+		
+		simfphys.RegisterEquipment( Ent )
+	end)
+	
 	if self.Locked then
 		Ent:Lock()
 	end
